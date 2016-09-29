@@ -1,0 +1,1405 @@
+fileFormatVersion: 2
+guid: c727d4cd81c3645df93f7b3f99aac2c0
+timeCreated: 1475139909
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 62-3
+    21300002: soul_charactorBg
+    21300004: soulFight_007
+    21300006: competition-01
+    21300008: soul_bg00
+    21300010: ShadowBody_1
+    21300012: soul_bg01
+    21300014: ShadowBody_2
+    21300016: competition-00
+    21300018: Box2
+    21300020: competition-22
+    21300022: 56-1
+    21300024: 24
+    21300026: battle station-10
+    21300028: competition-23
+    21300030: server_8
+    21300032: RankLevel_2
+    21300034: RankLevel_1
+    21300036: RankLevel_4
+    21300038: RankLevel_3
+    21300040: 62-1
+    21300042: Box
+    21300044: soulFight_009
+    21300046: RankLevel_0
+    21300048: 21
+    21300050: 12603013
+    21300052: 19
+    21300054: 12800011
+    21300056: 12800010
+    21300058: frontPage_01
+    21300060: 2
+    21300062: 33
+    21300064: 379
+    21300066: playerView-05
+    21300068: frontPage_vip_00
+    21300070: frontPage_02
+    21300072: 33-2
+    21300074: 56-6
+    21300076: 11
+    21300078: 40-16
+    21300080: 55-1
+    21300082: 13
+    21300084: ShadowHead_1_2
+    21300086: ShadowHead_2_1
+    21300088: competition-24
+    21300090: playerView-03
+    21300092: ShadowHead_1_4
+    21300094: ShadowHead_2_5
+    21300096: ShadowHead_2_2
+    21300098: competition-07
+    21300100: 55
+    21300102: competition-08
+    21300104: shopVIP_000
+    21300106: ShadowHead_1_5
+    21300108: 56-19
+    21300110: ShadowHead_2_3
+    21300112: ShadowHead_1_3
+    21300114: ShadowHead_1_1
+    21300116: ShadowHead_2_4
+    21300118: 56-3
+    21300120: 27
+    21300122: frontPage_04
+    21300124: 40-9
+    21300126: 18
+    21300128: 5
+    21300130: 56-4
+    21300132: competition-14
+    21300134: 17
+    21300136: 56-2
+    21300138: competition-17
+    21300140: competition-04
+    21300142: 56-18
+    21300144: competition-02
+    21300146: competition-03
+    21300148: competition-18
+    21300150: 56-17
+    21300152: 55-2
+    21300154: 40-13
+    21300156: guide_000
+    21300158: playerView-04
+    21300160: server_3
+    21300162: 56-5
+    21300164: Arena-42
+    21300166: 46-8 (2)
+    21300168: competition-13
+    21300170: competition-15
+    21300172: playerView-01
+    21300174: 40-24
+    21300176: 47
+    21300178: 38-8
+    21300180: competition-25
+    21300182: Arena-1.3
+    21300184: Other_4
+    21300186: Arena-1.4
+    21300188: arena_001
+    21300190: playerView-00
+    21300192: competition-19
+    21300194: competition-20
+    21300196: Other_7
+    21300198: frontPage_vip_num2
+    21300200: 38-2
+    21300202: frontPage_vip_num8
+    21300204: competition-21
+    21300206: frontPage_vip_num9
+    21300208: frontPage_vip_num5
+    21300210: frontPage_vip_num6
+    21300212: 50
+    21300214: frontPage_vip_num0
+    21300216: Other_2
+    21300218: arena_000
+    21300220: frontPage_vip_num4
+    21300222: frontPage_vip_num3
+    21300224: frontPage_vip_num7
+    21300226: frontPage_vip_num1
+    21300228: 38-9
+    21300230: Other_9
+    21300232: Other_5
+    21300234: Other_6
+    21300236: Other_8
+    21300238: 31
+    21300240: 28
+    21300242: Other_3
+    21300244: 32
+    21300246: 39-1
+    21300248: competition-16
+    21300250: 38-18
+    21300252: Other_1
+    21300254: Other_0
+    21300256: 6
+    21300258: 38-1
+    21300260: UI-2.2.6a
+    21300262: UI-2.2.7a
+    21300264: Arena-52
+    21300266: 56-15
+    21300268: GachaShop_001
+    21300270: 232
+    21300272: 30
+    21300274: 40-10
+    21300276: main_informationframe_01
+    21300278: Arena-1.1
+    21300280: Arena-1.2
+    21300282: 40-20
+    21300284: 54-2
+    21300286: 54-3
+    21300288: common-scroll bar-1
+    21300290: top-black-13
+    21300292: server_2
+    21300294: 40-35
+    21300296: 9
+    21300298: 7
+    21300300: Black
+    21300302: battle_character_08
+    21300304: battle_rocker_01
+    21300306: battle_character_07
+    21300308: battle_character_06
+    21300310: battle_skill_05
+    21300312: 38-25
+    21300314: battle_rocker_02
+    21300316: battle_skill_06
+    21300318: battle_knife_frame_02_break
+    21300320: battle_knife_frame_02
+    21300322: battle_character_06.1
+    21300324: GoldGachaMachine_03
+    21300326: battle_skill_06.2
+    21300328: battle_knife_frame_01
+    21300330: battle_auto_01
+    21300332: battle_auto_02
+    21300334: battle-45
+    21300336: battle_skill_06.1
+    21300338: battle_12
+    21300340: battle_13
+    21300342: BOSS-1
+    21300344: BOSS-5
+    21300346: BOSS-4
+    21300348: BOSS-2
+    21300350: BOSS-6
+    21300352: BOSS-3
+    21300354: BOSS-7
+    21300356: BOSS-1.11
+    21300358: hp_edge
+    21300360: battle_12.1
+    21300362: cp_edge
+    21300364: cp_edge_break
+    21300366: battle_character_11
+    21300368: battle_13.1
+    21300370: battle_1
+    21300372: battle_knife_frame_03
+    21300374: battle_character_06-1
+    21300376: battle_knife_frame_04
+    21300378: battle_character_10.1
+    21300380: battle_05
+    21300382: soul_composite_bg
+    21300384: 4
+    21300386: 38-23
+    21300388: 10
+    21300390: 3
+    21300392: 37-3
+    21300394: 37-4
+    21300396: 42-1
+    21300398: 43-6
+    21300400: 42-5
+    21300402: 42-4
+    21300404: 43-5
+    21300406: 43-1
+    21300408: 42-6
+    21300410: 43-3
+    21300412: 43-4
+    21300414: 43-2
+    21300416: 42-2
+    21300418: 42-3
+    21300420: soul_000
+    21300422: 43-7
+    21300424: 42-7
+    21300426: top-soul-1
+    21300428: 40-19
+    21300430: 12
+    21300432: 50-4
+    21300434: 50-1
+    21300436: soul-icon-2
+    21300438: soul_listTitle
+    21300440: 33-1
+    21300442: 14
+    21300444: 50-3
+    21300446: souldust
+    21300448: 40-29-2
+    21300450: 1
+    21300452: 40-32
+    21300454: 40-2
+    21300456: Arrow
+    21300458: 40-11
+    21300460: 50-2
+    21300462: soul-icon-1
+    21300464: 46-6
+    21300466: soul-icon-5
+    21300468: 38-6
+    21300470: 40-15
+    21300472: 44-3
+    21300474: 44-5
+    21300476: 44-2
+    21300478: 44-1
+    21300480: 44-4
+    21300482: 44-6
+    21300484: 44-7
+    21300486: soul-icon-3
+    21300488: 37-8
+    21300490: 48
+    21300492: 50-5
+    21300494: 26
+    21300496: 37-5
+    21300498: 45-1
+    21300500: 40-22
+    21300502: 45-2
+    21300504: 45-3
+    21300506: 37-9
+    21300508: 25
+    21300510: 37-2
+    21300512: 8
+    21300514: assetinfo_box
+    21300516: accountimage_box
+    21300518: assetinfo_box2
+    21300520: accountimage_spirit_Zepar
+    21300522: accountimage_spirit_Eos
+    21300524: accountimage_spirit_Leyak
+    21300526: accountimage_spirit_Balong
+    21300528: accountimage_spirit_Finwei
+    21300530: accountimage_spirit_sylph
+    21300532: accountimage_spirit_selkie
+    21300534: accountimage_spirit_Peri
+    21300536: AccountImage_PVP_GRADE_01
+    21300538: AccountImage_PVP_GRADE_06
+    21300540: accountimage_spirit_Banu
+    21300542: accountimage_spirit_Rangda
+    21300544: accountimage_spirit_Mammon
+    21300546: accountimage_spirit_Procel
+    21300548: accountimage_spirit_Scathi
+    21300550: accountimage_spirit_Pei
+    21300552: accountimage_spirit_Nurgle
+    21300554: accountimage_spirit_Cacus
+    21300556: accountimage_spirit_Mach
+    21300558: accountimage_spirit_Athena
+    21300560: AccountImage_PVP_GRADE_02
+    21300562: accountimage_spirit_Lilith
+    21300564: AccountImage_PVP_GRADE_03
+    21300566: accountimage_spirit_Hag
+    21300568: accountimage_spirit_Cait Sith
+    21300570: accountimage_spirit_Juno
+    21300572: accountimage_spirit_demeter
+    21300574: accountimage_spirit_Rousalka
+    21300576: AccountImage_PVP_GRADE_04
+    21300578: accountimage_spirit_Arioch
+    21300580: accountimage_mob_potato
+    21300582: accountimage_spirit_Imp
+    21300584: AccountImage_PVP_GRADE_05
+    21300586: accountimage_spirit_Arthemis
+    21300588: accountimage_spirit_Elwei
+    21300590: accountimage_spirit_Behemoth
+    21300592: accountimage_spirit_Agni
+    21300594: accountimage_spirit_Brigit
+    21300596: accountimage_spirit_Wisp
+    21300598: accountimage_spirit_Nix
+    21300600: accountimage_spirit_Baldr
+    21300602: accountimage_spirit_Angel
+    21300604: accountimage_spirit_Aphrodite
+    21300606: accountimage_spirit_Leto
+    21300608: accountimage_spirit_Erinys
+    21300610: accountimage_spirit_Malphas
+    21300612: accountimage_spirit_Moira
+    21300614: AccountImage_PVP_GRADE_07
+    21300616: rank_S-
+    21300618: rank_c
+    21300620: rank_S
+    21300622: rank_CCC
+    21300624: rank_bb+
+    21300626: rank_C+
+    21300628: rank_SSS-
+    21300630: rank_S+
+    21300632: rank_SSS
+    21300634: rank_CCC+
+    21300636: rank_A+
+    21300638: rank_CCC-
+    21300640: rank_bbb
+    21300642: rank_SS
+    21300644: rank_b-
+    21300646: rank_b+
+    21300648: rank_CC+
+    21300650: rank_AAA+
+    21300652: rank_f
+    21300654: rank_CC
+    21300656: rank_bbb+
+    21300658: rank_A
+    21300660: rank_AAA-
+    21300662: rank_AAA
+    21300664: rank_d
+    21300666: rank_AA
+    21300668: rank_SSS+
+    21300670: rank_bbb-
+    21300672: rank_b
+    21300674: rank_AA-
+    21300676: rank_A-
+    21300678: rank_bb
+    21300680: rank_SS-
+    21300682: rank_CC-
+    21300684: rank_C-
+    21300686: rank_AA+
+    21300688: rank_SS+
+    21300690: rank_bb-
+    21300692: FrameHeader
+    21300694: quest_complete
+    21300696: loadbar
+    21300698: dragonbutton
+    21300700: item bg
+    21300702: name2
+    21300704: FrameOutline
+    21300706: circle select
+    21300708: dragonbutton1
+    21300710: back
+    21300712: select
+    21300714: red-dragonbutton
+    21300716: back
+    21300718: corner
+    21300720: boxpanel_a
+    21300722: balloon_blue
+    21300724: img pick
+    21300726: button
+    21300728: topbar
+    21300730: yellow_button
+    21300732: blue_button
+    21300734: menu
+    21300736: dialogue_fram
+    21300738: tap table
+    21300740: numberbox
+    21300742: icon star
+    21300744: textpanel
+    21300746: icon
+    21300748: icon_back
+    21300750: stripepanel
+    21300752: select line2
+    21300754: box02
+    21300756: login_botton
+    21300758: new_x
+    21300760: NEW
+    21300762: pen
+    21300764: bluebox
+    21300766: button02
+    21300768: icon2
+    21300770: arrow 04
+    21300772: arrow 05
+    21300774: event bg
+    21300776: arrow
+    21300778: tap button
+    21300780: circle 02
+    21300782: gagebox01
+    21300784: bg box
+    21300786: Friend box
+    21300788: '-'
+    21300790: line 02
+    21300792: box01
+    21300794: icon 4
+    21300796: ring
+    21300798: stop
+    21300800: line
+    21300802: line03
+    21300804: popup
+    21300806: ques_mark
+    21300808: name
+    21300810: exc_mark
+    21300812: radio button_ select
+    21300814: radio button
+    21300816: x
+    21300818: mob_hpbar
+    21300820: line 02
+    21300822: mob_hp
+    21300824: check
+    21300826: line 04
+    21300828: numberbox_b
+    21300830: gagebar_white
+    21300832: blue_point
+    21300834: scroll
+    21300836: arrow_d
+    21300838: dot_7px
+    21300840: line 03
+    21300842: dot_4px
+    21300844: bg dim
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: 4
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 1
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 0
+  textureType: 5
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FrameHeader
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 282
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: quest_complete
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 120
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: loadbar
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 0
+        width: 216
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: dragonbutton
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 72
+        width: 163
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: item bg
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 191
+        width: 102
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: name2
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 72
+        width: 172
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: FrameOutline
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 191
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: circle select
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 191
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: dragonbutton1
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 191
+        width: 115
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: back
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 294
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: select
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 294
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: red-dragonbutton
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 120
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: back
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 294
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: corner
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 294
+        width: 71
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: boxpanel_a
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 294
+        width: 69
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: balloon_blue
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 294
+        width: 79
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: img pick
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 375
+        width: 67
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: button
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 72
+        width: 84
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: topbar
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 0
+        width: 147
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: yellow_button
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 375
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: blue_button
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 375
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: menu
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 375
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: dialogue_fram
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 375
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: tap table
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 443
+        width: 50
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: numberbox
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 72
+        width: 83
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: icon star
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 191
+        width: 61
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: textpanel
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 72
+        width: 92
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: icon
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 191
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: icon_back
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 191
+        width: 58
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: stripepanel
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 191
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: select line2
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 191
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: box02
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 191
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: login_botton
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 191
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: new_x
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 191
+        width: 49
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: NEW
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 72
+        width: 74
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: pen
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 143
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: bluebox
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 191
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: button02
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 191
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: icon2
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 191
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: arrow 04
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 443
+        width: 27
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: arrow 05
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 191
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: event bg
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 143
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: arrow
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 143
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: tap button
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 294
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: circle 02
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 143
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: gagebox01
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 0
+        width: 53
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: bg box
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 143
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: Friend box
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 143
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: '-'
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 143
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: line 02
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 0
+        width: 125
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: box01
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 143
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: icon 4
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 72
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: ring
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 375
+        width: 17
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: stop
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 72
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: line
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 11
+        width: 127
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: line03
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 72
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: popup
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 72
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: ques_mark
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 72
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: name
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 72
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: exc_mark
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 72
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: radio button_ select
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 143
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: radio button
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 143
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: x
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 143
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: mob_hpbar
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 143
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: line 02
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 20
+        width: 191
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: mob_hp
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 143
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: check
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 250
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: line 04
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 30
+        width: 87
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: numberbox_b
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 143
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: gagebar_white
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 250
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: blue_point
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 143
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: scroll
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 36
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: arrow_d
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 54
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: dot_7px
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 0
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: line 03
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 0
+        width: 12
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: dot_4px
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 11
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: bg dim
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 0
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

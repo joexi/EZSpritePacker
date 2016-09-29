@@ -10,30 +10,41 @@ public class EZSpritePacker : Editor {
 	public static void Pack() {
 		Object[] selection = Selection.GetFiltered (typeof(Object), SelectionMode.DeepAssets);
 		List <Texture2D> sprites = new List<Texture2D> ();
+
 		foreach (Object obj in selection) {
 			if (obj is Texture2D) {
 				Texture2D tex = obj as Texture2D;
 				sprites.Add (tex);
 			}
 		}
-		int defaultWidth = 1024;
-		int defaultHeight = 1024;
-		int padding = 1;
 
+
+		PackTexture (sprites, 512, 512, 1);
+	}
+
+	private static void PackTexture(List <Texture2D> sprites, int width, int height, int padding) {
+		List <SpriteMetaData> spriteSheets = new List<SpriteMetaData> ();
+		List <Rect> spaces = new List<Rect> ();
+		Dictionary<string, List<Texture2D>> textureCache = new Dictionary<string, List<Texture2D>> ();
+		Dictionary<Texture2D, Rect> rectCache = new Dictionary<Texture2D, Rect> ();
+
+		Texture2D resultTexture = new Texture2D (width, height, TextureFormat.RGBA32, false, true);
 		sprites.Sort (delegate(Texture2D x, Texture2D y) {
 			return - (x.width * x.height).CompareTo(y.width * y.height);	
 		});
+		spaces.Add (new Rect (0, 0, width, height));
 
-		List <Rect> spaces = new List<Rect> ();
-		spaces.Add (new Rect (0, 0, defaultWidth, defaultHeight));
 
-		Texture2D resultTexture = new Texture2D (defaultWidth, defaultHeight, TextureFormat.RGBA32, false, true);
-		Dictionary<string, List<Texture2D>> textureCache = new Dictionary<string, List<Texture2D>> ();
 
 		foreach (Texture2D sp in sprites) {
 			bool deploy = false;
-			if (TextureInCache(sp, textureCache)) {
-				Debug.Log (sp.name + " duplicate!");
+			Rect frame = default(Rect);
+			if (GetRectFromCache(sp, rectCache, ref frame)) {
+				SpriteMetaData metaData = new SpriteMetaData();
+				metaData.name = sp.name;
+				metaData.rect = frame;
+				metaData.pivot = Vector2.zero;
+				spriteSheets.Add (metaData);
 				continue;
 			}
 			for (int i = 0; i < spaces.Count; i++) {
@@ -41,39 +52,53 @@ public class EZSpritePacker : Editor {
 				Vector2 usageSize = new Vector2 (sp.width + padding, sp.height + padding);
 
 				if (space.width >= usageSize.x && space.height >= usageSize.y) {
-					Rect frame = new Rect (space.x, space.y, sp.width, sp.height);
+					frame = new Rect (space.x, space.y, sp.width, sp.height);
 					Color[] colors = sp.GetPixels ();
 					resultTexture.SetPixels ((int)frame.x, (int)frame.y, (int)frame.width, (int)frame.height, colors);
 					spaces.RemoveAt (i);
 					spaces.InsertRange (i, SplitSpace (space, usageSize));
 					deploy = true;
+
+					SpriteMetaData metaData = new SpriteMetaData();
+					metaData.name = sp.name;
+					metaData.rect = frame;
+					metaData.pivot = Vector2.zero;
+					spriteSheets.Add (metaData);
 					break;
 				}
 			}
 			if (!deploy) {
-				Debug.LogError ("pack failed!");
+				PackTexture (sprites, width > height ? width : width * 2, width > height ? height * 2 : height, padding);
+				Debug.LogError ("pack failed!" + width + "x" + height);
 				return;
 			}
 		}
 
-		byte[] data = resultTexture.EncodeToPNG ();
-		File.WriteAllBytes (Application.dataPath + "/output.png", data);
-		AssetDatabase.Refresh ();
-	}
 
-	private static bool TextureInCache(Texture2D src, Dictionary<string, List<Texture2D>> textureCache) {
-		string key = (int)src.width + " " + (int)src.height;
-		if (textureCache.ContainsKey (key)) {
-			List<Texture2D> textures = textureCache [key];
-			foreach (Texture2D texture in textures) {
-				if (CompateTexture (src, texture)) {
+		byte[] data = resultTexture.EncodeToPNG ();
+		string filePath = Application.dataPath + "/Atlas/output.png";
+		File.WriteAllBytes (filePath, data);
+		AssetDatabase.ImportAsset (Application.dataPath + "/Atlas/");
+		AssetDatabase.Refresh ();
+
+		TextureImporter impt = AssetImporter.GetAtPath ("Assets/Atlas/output.png") as TextureImporter;
+		impt.spritesheet = spriteSheets.ToArray();
+		impt.mipmapEnabled = false;
+		impt.alphaIsTransparency = false;
+		impt.filterMode = FilterMode.Bilinear;
+		impt.textureType = TextureImporterType.Advanced;
+		impt.textureFormat = TextureImporterFormat.RGBA32;
+		impt.SaveAndReimport ();
+	}
+	private static bool GetRectFromCache(Texture2D src, Dictionary<Texture2D, Rect> rectCache, ref Rect rect) {
+		foreach (Texture2D keyTexture in rectCache.Keys) {
+			if (src.width == keyTexture.width && src.height == keyTexture.height) {
+				if (CompateTexture (src, keyTexture)) {
+					rect = rectCache[keyTexture];
 					return true;
 				}
 			}
-		} else {
-			textureCache [key] = new List<Texture2D> ();
 		}
-		textureCache [key].Add (src);
 		return false;
 	}
 
