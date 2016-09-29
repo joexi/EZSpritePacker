@@ -1,0 +1,106 @@
+using UnityEngine;
+using System.Collections;
+using UnityEditor;
+using UnityEngine.UI;
+using System.Collections.Generic;
+using System.IO;
+
+public class EZSpritePacker : Editor {
+	[MenuItem("Tools/Pack")]
+	public static void Pack() {
+		Object[] selection = Selection.GetFiltered (typeof(Object), SelectionMode.DeepAssets);
+		List <Texture2D> sprites = new List<Texture2D> ();
+		foreach (Object obj in selection) {
+			if (obj is Texture2D) {
+				Texture2D tex = obj as Texture2D;
+				sprites.Add (tex);
+			}
+		}
+		int defaultWidth = 1024;
+		int defaultHeight = 1024;
+		int padding = 1;
+
+		sprites.Sort (delegate(Texture2D x, Texture2D y) {
+			return - (x.width * x.height).CompareTo(y.width * y.height);	
+		});
+
+		List <Rect> spaces = new List<Rect> ();
+		spaces.Add (new Rect (0, 0, defaultWidth, defaultHeight));
+
+		Texture2D resultTexture = new Texture2D (defaultWidth, defaultHeight, TextureFormat.RGBA32, false, true);
+		Dictionary<string, List<Texture2D>> textureCache = new Dictionary<string, List<Texture2D>> ();
+
+		foreach (Texture2D sp in sprites) {
+			bool deploy = false;
+			if (TextureInCache(sp, textureCache)) {
+				Debug.Log (sp.name + " duplicate!");
+				continue;
+			}
+			for (int i = 0; i < spaces.Count; i++) {
+				Rect space = spaces [i];
+				Vector2 usageSize = new Vector2 (sp.width + padding, sp.height + padding);
+
+				if (space.width >= usageSize.x && space.height >= usageSize.y) {
+					Rect frame = new Rect (space.x, space.y, sp.width, sp.height);
+					Color[] colors = sp.GetPixels ();
+					resultTexture.SetPixels ((int)frame.x, (int)frame.y, (int)frame.width, (int)frame.height, colors);
+					spaces.RemoveAt (i);
+					spaces.InsertRange (i, SplitSpace (space, usageSize));
+					deploy = true;
+					break;
+				}
+			}
+			if (!deploy) {
+				Debug.LogError ("pack failed!");
+				return;
+			}
+		}
+
+		byte[] data = resultTexture.EncodeToPNG ();
+		File.WriteAllBytes (Application.dataPath + "/output.png", data);
+		AssetDatabase.Refresh ();
+	}
+
+	private static bool TextureInCache(Texture2D src, Dictionary<string, List<Texture2D>> textureCache) {
+		string key = (int)src.width + " " + (int)src.height;
+		if (textureCache.ContainsKey (key)) {
+			List<Texture2D> textures = textureCache [key];
+			foreach (Texture2D texture in textures) {
+				if (CompateTexture (src, texture)) {
+					return true;
+				}
+			}
+		} else {
+			textureCache [key] = new List<Texture2D> ();
+		}
+		textureCache [key].Add (src);
+		return false;
+	}
+
+	private static bool CompateTexture(Texture2D src, Texture2D dst) {
+		if (src.width != dst.width || src.height != dst.height) {
+			return false;
+		}
+		Color[] cSrc = src.GetPixels ();
+		Color[] cDst = src.GetPixels ();
+		for (int i = 0; i < cSrc.Length; i++) {
+			if (cSrc [i] != cDst [i]) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	private static List<Rect> SplitSpace(Rect space, Vector2 usageSize) {
+		List<Rect> results = new List<Rect> ();
+		if (space.width > usageSize.x) {
+			Rect r = new Rect (space.x + usageSize.x, space.y, space.width - usageSize.x, usageSize.y);
+			results.Add (r);
+		}
+		if (space.height > usageSize.y) {
+			Rect r = new Rect (space.x, space.y + usageSize.y, space.width, space.height - usageSize.y);
+			results.Add (r);
+		}
+		return results;
+	}
+}
