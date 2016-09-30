@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{0352B689-6B3F-0883-0E1F-475B4A33AA2E}") = "EZSpritePacker", "Assembly-CSharp-Editor.csproj", "{C228C4DF-4868-A506-E246-31A85EAA28BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C228C4DF-4868-A506-E246-31A85EAA28BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C228C4DF-4868-A506-E246-31A85EAA28BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C228C4DF-4868-A506-E246-31A85EAA28BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C228C4DF-4868-A506-E246-31A85EAA28BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

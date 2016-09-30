@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: c727d4cd81c3645df93f7b3f99aac2c0
-timeCreated: 1475139909
+timeCreated: 1475148443
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -427,6 +427,16 @@ TextureImporter:
     21300840: line 03
     21300842: dot_4px
     21300844: bg dim
+    21300846: boxpanel_a 1
+    21300848: box03
+    21300850: button03
+    21300852: arrow 06
+    21300854: arrow 07
+    21300856: tap table 2
+    21300858: tap table 1
+    21300860: tap table 4
+    21300862: tap table 3
+    21300864: tap table 5
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -472,926 +482,1205 @@ TextureImporter:
   textureType: 5
   buildTargetSettings: []
   spriteSheet:
-    serializedVersion: 2
     sprites:
-    - serializedVersion: 2
-      name: FrameHeader
+    - name: loadbar
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 282
-        height: 71
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: quest_complete
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 72
-        width: 120
-        height: 118
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: loadbar
-      rect:
-        serializedVersion: 2
-        x: 283
         y: 0
         width: 216
         height: 53
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: dragonbutton
+      outline:
+      - - {x: -83, y: 26.5}
+        - {x: -108, y: 5.5}
+        - {x: -108, y: -20.5}
+        - {x: -101, y: -26.5}
+        - {x: 108, y: -26.5}
+        - {x: 108, y: 18.5}
+        - {x: 68, y: 26.5}
+    - name: item bg
       rect:
         serializedVersion: 2
-        x: 121
-        y: 72
-        width: 163
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: item bg
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 191
+        x: 217
+        y: 0
         width: 102
         height: 102
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: name2
+      outline:
+      - - {x: -51, y: 51}
+        - {x: -51, y: -51}
+        - {x: 51, y: -51}
+        - {x: 51, y: 51}
+    - name: name2
       rect:
         serializedVersion: 2
-        x: 285
-        y: 72
+        x: 320
+        y: 0
         width: 172
         height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: FrameOutline
+      outline:
+      - - {x: -83, y: 27}
+        - {x: -86, y: 23}
+        - {x: -86, y: -27}
+        - {x: 86, y: -27}
+        - {x: 86, y: 17}
+        - {x: 72, y: 27}
+    - name: FrameOutline
       rect:
         serializedVersion: 2
-        x: 103
-        y: 191
+        x: 320
+        y: 55
         width: 90
         height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: circle select
+      outline:
+      - - {x: -45, y: 45}
+        - {x: -45, y: -43}
+        - {x: -43, y: -45}
+        - {x: 45, y: -45}
+        - {x: 45, y: 45}
+    - name: circle select
       rect:
         serializedVersion: 2
-        x: 194
-        y: 191
+        x: 411
+        y: 55
         width: 84
         height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: dragonbutton1
+      outline:
+      - - {x: -42, y: 42}
+        - {x: -42, y: -21}
+        - {x: -37, y: -30}
+        - {x: -31, y: -36}
+        - {x: -22, y: -42}
+        - {x: 39, y: -42}
+        - {x: 42, y: -30}
+        - {x: 42, y: 40}
+        - {x: 41, y: 42}
+    - name: back
       rect:
         serializedVersion: 2
-        x: 279
-        y: 191
-        width: 115
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: back
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 294
+        x: 411
+        y: 140
         width: 80
         height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: select
+      outline:
+      - - {x: -40, y: 40}
+        - {x: -40, y: -40}
+        - {x: 40, y: -40}
+        - {x: 40, y: 39}
+        - {x: 39, y: 40}
+    - name: select
       rect:
         serializedVersion: 2
-        x: 81
-        y: 294
+        x: 411
+        y: 221
         width: 80
         height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: red-dragonbutton
+      outline:
+      - - {x: -40, y: 40}
+        - {x: -40, y: -40}
+        - {x: 40, y: -40}
+        - {x: 40, y: 40}
+    - name: red-dragonbutton
       rect:
         serializedVersion: 2
-        x: 500
-        y: 0
+        x: 320
+        y: 302
         width: 120
         height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: back
+      outline:
+      - - {x: -60, y: 24.5}
+        - {x: -60, y: -22.5}
+        - {x: -59, y: -24.5}
+        - {x: 59, y: -24.5}
+        - {x: 60, y: -22.5}
+        - {x: 60, y: 24.5}
+    - name: back
       rect:
         serializedVersion: 2
-        x: 162
-        y: 294
+        x: 441
+        y: 302
         width: 64
         height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: corner
+      outline:
+      - - {x: 5, y: 40}
+        - {x: -32, y: 17}
+        - {x: -32, y: -13}
+        - {x: -8, y: -40}
+        - {x: 32, y: -40}
+        - {x: 32, y: 40}
+    - name: corner
       rect:
         serializedVersion: 2
-        x: 227
-        y: 294
+        x: 411
+        y: 383
         width: 71
         height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: boxpanel_a
+      outline:
+      - - {x: -35.5, y: 36}
+        - {x: -35.5, y: -36}
+        - {x: -19.5, y: -36}
+        - {x: 35.5, y: 25}
+        - {x: 35.5, y: 36}
+    - name: boxpanel_a 1
       rect:
         serializedVersion: 2
-        x: 299
-        y: 294
+        x: 320
+        y: 146
         width: 69
         height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: balloon_blue
+      outline:
+      - - {x: -34.5, y: 35}
+        - {x: -34.5, y: -35}
+        - {x: 34.5, y: -35}
+        - {x: 34.5, y: 32}
+        - {x: 30.5, y: 35}
+    - name: balloon_blue
       rect:
         serializedVersion: 2
-        x: 369
-        y: 294
+        x: 320
+        y: 217
         width: 79
         height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: img pick
+      outline:
+      - - {x: -38.5, y: 29.5}
+        - {x: -38.5, y: -22.5}
+        - {x: -30.5, y: -29.5}
+        - {x: 36.5, y: -29.5}
+        - {x: 39.5, y: -28.5}
+        - {x: 39.5, y: 18.5}
+        - {x: 23.5, y: 29.5}
+    - name: img pick
       rect:
         serializedVersion: 2
-        x: 0
-        y: 375
+        x: 320
+        y: 352
         width: 67
         height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: button
+      outline:
+      - - {x: -33.5, y: 33.5}
+        - {x: -33.5, y: -33.5}
+        - {x: 33.5, y: -33.5}
+        - {x: 33.5, y: 33.5}
+    - name: button
       rect:
         serializedVersion: 2
-        x: 458
-        y: 72
+        x: 411
+        y: 456
         width: 84
         height: 53
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: topbar
+      outline:
+      - - {x: -39, y: 26.5}
+        - {x: -42, y: 24.5}
+        - {x: -42, y: -26.5}
+        - {x: 37, y: -26.5}
+        - {x: 42, y: -23.5}
+        - {x: 42, y: 26.5}
+    - name: topbar
       rect:
         serializedVersion: 2
-        x: 621
-        y: 0
+        x: 217
+        y: 420
         width: 147
         height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - serializedVersion: 2
-      name: yellow_button
+    - name: blue_button
       rect:
         serializedVersion: 2
-        x: 68
-        y: 375
+        x: 217
+        y: 103
         width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: blue_button
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
+    - name: menu
       rect:
         serializedVersion: 2
-        x: 133
-        y: 375
+        x: 217
+        y: 168
         width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: menu
+      outline:
+      - - {x: -32, y: 25}
+        - {x: -32, y: -25}
+        - {x: -27, y: -29}
+        - {x: 32, y: -29}
+        - {x: 32, y: 25}
+    - name: dialogue_fram
       rect:
         serializedVersion: 2
-        x: 198
-        y: 375
+        x: 217
+        y: 233
         width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: dialogue_fram
+      outline:
+      - - {x: -32, y: 30}
+        - {x: -32, y: -31}
+        - {x: 32, y: -31}
+        - {x: 32, y: 30}
+      - - {x: -15, y: -15}
+        - {x: -17, y: -18}
+        - {x: -17, y: -20}
+        - {x: -16, y: -20}
+        - {x: -16, y: -19}
+        - {x: -18, y: -18}
+        - {x: -18, y: -17}
+        - {x: -25, y: -8}
+        - {x: -22, y: 10}
+        - {x: -22, y: 11}
+        - {x: -16, y: 18}
+        - {x: -16, y: 19}
+        - {x: -17, y: 19}
+        - {x: -17, y: 17}
+        - {x: -15, y: 13}
+        - {x: 14, y: 14}
+        - {x: 17, y: 17}
+        - {x: 17, y: 19}
+        - {x: 16, y: 19}
+        - {x: 16, y: 18}
+        - {x: 18, y: 17}
+        - {x: 18, y: 16}
+        - {x: 25, y: 7}
+        - {x: 22, y: -11}
+        - {x: 22, y: -12}
+        - {x: 16, y: -19}
+        - {x: 16, y: -20}
+        - {x: 17, y: -20}
+        - {x: 17, y: -18}
+        - {x: 12, y: -13}
+      - - {x: -12, y: -9}
+        - {x: -14, y: -11}
+        - {x: -14, y: -13}
+        - {x: -12, y: -15}
+        - {x: -10, y: -15}
+        - {x: -8, y: -13}
+        - {x: -8, y: -11}
+        - {x: -10, y: -9}
+      - - {x: 9, y: -9}
+        - {x: 8, y: -11}
+        - {x: 8, y: -14}
+        - {x: 10, y: -15}
+        - {x: 13, y: -15}
+        - {x: 14, y: -14}
+        - {x: 14, y: -9}
+      - - {x: -9, y: 14}
+        - {x: -14, y: 14}
+        - {x: -14, y: 9}
+        - {x: -12, y: 8}
+        - {x: -9, y: 8}
+        - {x: -8, y: 10}
+        - {x: -8, y: 13}
+      - - {x: 10, y: 14}
+        - {x: 8, y: 12}
+        - {x: 8, y: 10}
+        - {x: 10, y: 8}
+        - {x: 12, y: 8}
+        - {x: 14, y: 10}
+        - {x: 14, y: 12}
+        - {x: 12, y: 14}
+    - name: yellow_button
       rect:
         serializedVersion: 2
-        x: 263
-        y: 375
+        x: 217
+        y: 298
         width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: tap table
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
+    - name: tap table 4
       rect:
         serializedVersion: 2
         x: 0
-        y: 443
+        y: 54
         width: 50
         height: 78
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: numberbox
+      outline:
+      - - {x: -25, y: 39}
+        - {x: -25, y: -39}
+        - {x: 25, y: -39}
+        - {x: 25, y: 39}
+    - name: tap table 2
       rect:
         serializedVersion: 2
-        x: 543
-        y: 72
+        x: 51
+        y: 54
+        width: 50
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: 39}
+        - {x: -25, y: -39}
+        - {x: 25, y: -39}
+        - {x: 25, y: 39}
+    - name: tap table 5
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 54
+        width: 50
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: 39}
+        - {x: -25, y: -39}
+        - {x: 25, y: -39}
+        - {x: 25, y: 39}
+    - name: tap table
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 54
+        width: 50
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: 39}
+        - {x: -25, y: -39}
+        - {x: 25, y: -39}
+        - {x: 25, y: 39}
+    - name: tap table 1
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 133
+        width: 50
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: 39}
+        - {x: -25, y: -39}
+        - {x: 25, y: -39}
+        - {x: 25, y: 39}
+    - name: numberbox
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 450
         width: 83
         height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: icon star
+      outline:
+      - - {x: -40.5, y: 21.5}
+        - {x: -40.5, y: -13.5}
+        - {x: -39.5, y: -21.5}
+        - {x: 37.5, y: -21.5}
+        - {x: 39.5, y: -20.5}
+        - {x: 41.5, y: -16.5}
+        - {x: 41.5, y: 21.5}
+    - name: icon star
       rect:
         serializedVersion: 2
-        x: 395
-        y: 191
+        x: 217
+        y: 450
         width: 61
         height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: textpanel
+      outline:
+      - - {x: -23.5, y: 29}
+        - {x: -30.5, y: 26}
+        - {x: -30.5, y: -13}
+        - {x: -23.5, y: -29}
+        - {x: 24.5, y: -29}
+        - {x: 30.5, y: -9}
+        - {x: 30.5, y: 15}
+        - {x: 18.5, y: 29}
+    - name: textpanel
       rect:
         serializedVersion: 2
-        x: 627
-        y: 72
+        x: 217
+        y: 363
         width: 92
         height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: icon
+      outline:
+      - - {x: -46, y: 18.5}
+        - {x: -46, y: -18.5}
+        - {x: 46, y: -18.5}
+        - {x: 46, y: 18.5}
+    - name: icon
       rect:
         serializedVersion: 2
-        x: 457
-        y: 191
+        x: 153
+        y: 212
         width: 58
         height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: icon_back
+      outline:
+      - - {x: -29, y: 29}
+        - {x: -29, y: -29}
+        - {x: 25, y: -29}
+        - {x: 29, y: -24}
+        - {x: 29, y: 29}
+    - name: icon_back
       rect:
         serializedVersion: 2
-        x: 516
-        y: 191
+        x: 153
+        y: 271
         width: 58
         height: 57
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: stripepanel
+      outline:
+      - - {x: -29, y: 28.5}
+        - {x: -29, y: -28.5}
+        - {x: 25, y: -28.5}
+        - {x: 29, y: -23.5}
+        - {x: 29, y: 28.5}
+    - name: stripepanel
       rect:
         serializedVersion: 2
-        x: 575
-        y: 191
+        x: 153
+        y: 329
         width: 52
         height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: select line2
+      outline:
+      - - {x: -25, y: 26}
+        - {x: -26, y: 23}
+        - {x: -26, y: -26}
+        - {x: 24, y: -26}
+        - {x: 26, y: -23}
+        - {x: 26, y: 18}
+        - {x: 18, y: 26}
+    - name: select line2
       rect:
         serializedVersion: 2
-        x: 628
-        y: 191
+        x: 153
+        y: 382
         width: 51
         height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: box02
+      outline:
+      - - {x: -25.5, y: 26}
+        - {x: -25.5, y: -26}
+        - {x: 25.5, y: -26}
+        - {x: 25.5, y: 26}
+    - name: box02
       rect:
         serializedVersion: 2
-        x: 680
-        y: 191
+        x: 153
+        y: 435
         width: 51
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: login_botton
+      outline:
+      - - {x: -25.5, y: 25.5}
+        - {x: -25.5, y: -25.5}
+        - {x: 25.5, y: -25.5}
+        - {x: 25.5, y: 25.5}
+    - name: login_botton
       rect:
         serializedVersion: 2
-        x: 732
-        y: 191
+        x: 102
+        y: 133
         width: 50
         height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: new_x
+      outline:
+      - - {x: -25, y: 25}
+        - {x: -25, y: -25}
+        - {x: 25, y: -25}
+        - {x: 25, y: 25}
+    - name: new_x
       rect:
         serializedVersion: 2
-        x: 783
-        y: 191
+        x: 102
+        y: 184
         width: 49
         height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: NEW
+      outline:
+      - - {x: -21.5, y: 25}
+        - {x: -24.5, y: 21}
+        - {x: -24.5, y: -22}
+        - {x: -20.5, y: -25}
+        - {x: 22.5, y: -25}
+        - {x: 24.5, y: -22}
+        - {x: 24.5, y: 22}
+        - {x: 20.5, y: 25}
+    - name: NEW
       rect:
         serializedVersion: 2
-        x: 720
-        y: 72
+        x: 51
+        y: 235
         width: 74
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: pen
+      outline:
+      - - {x: -33, y: 16}
+        - {x: -37, y: 14}
+        - {x: -37, y: -15}
+        - {x: -36, y: -16}
+        - {x: 29, y: -16}
+        - {x: 37, y: -3}
+        - {x: 37, y: 13}
+        - {x: 31, y: 16}
+    - name: pen
       rect:
         serializedVersion: 2
-        x: 121
-        y: 143
+        x: 51
+        y: 268
         width: 54
         height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: bluebox
+      outline:
+      - - {x: -27, y: 21}
+        - {x: -27, y: -21}
+        - {x: 27, y: -21}
+        - {x: 27, y: 21}
+    - name: bluebox
       rect:
         serializedVersion: 2
-        x: 833
-        y: 191
+        x: 102
+        y: 311
         width: 47
         height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: button02
+      outline:
+      - - {x: -20.5, y: 23.5}
+        - {x: -23.5, y: 20.5}
+        - {x: -23.5, y: -20.5}
+        - {x: -21.5, y: -23.5}
+        - {x: 23.5, y: -23.5}
+        - {x: 23.5, y: 23.5}
+    - name: button03
       rect:
         serializedVersion: 2
-        x: 881
-        y: 191
+        x: 106
+        y: 359
         width: 45
         height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: icon2
+      outline:
+      - - {x: -20.5, y: 22.5}
+        - {x: -22.5, y: 20.5}
+        - {x: -22.5, y: -20.5}
+        - {x: -20.5, y: -22.5}
+        - {x: 20.5, y: -22.5}
+        - {x: 22.5, y: -20.5}
+        - {x: 22.5, y: 20.5}
+        - {x: 20.5, y: 22.5}
+    - name: button02
       rect:
         serializedVersion: 2
-        x: 927
-        y: 191
+        x: 106
+        y: 405
         width: 45
         height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: arrow 04
+      outline:
+      - - {x: -20.5, y: 22.5}
+        - {x: -22.5, y: 20.5}
+        - {x: -22.5, y: -20.5}
+        - {x: -20.5, y: -22.5}
+        - {x: 20.5, y: -22.5}
+        - {x: 22.5, y: -20.5}
+        - {x: 22.5, y: 20.5}
+        - {x: 20.5, y: 22.5}
+    - name: icon2
       rect:
         serializedVersion: 2
-        x: 51
-        y: 443
+        x: 106
+        y: 451
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.5, y: 22.5}
+        - {x: -22.5, y: -22.5}
+        - {x: 22.5, y: -22.5}
+        - {x: 22.5, y: 22.5}
+    - name: arrow 04
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 383
         width: 27
         height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - serializedVersion: 2
-      name: arrow 05
+    - name: arrow 05
       rect:
         serializedVersion: 2
-        x: 973
-        y: 191
+        x: 279
+        y: 450
         width: 40
         height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: event bg
+      outline:
+      - - {x: 20, y: 13.5}
+        - {x: 4, y: 21.5}
+        - {x: -4, y: 21.5}
+        - {x: -20, y: 11.5}
+        - {x: -20, y: -11.5}
+        - {x: -8, y: -21.5}
+        - {x: 4, y: -21.5}
+        - {x: 5, y: -20.5}
+        - {x: 4, y: -17.5}
+        - {x: 20, y: 5.5}
+    - name: event bg
       rect:
         serializedVersion: 2
-        x: 176
-        y: 143
+        x: 106
+        y: 268
         width: 40
         height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: arrow
+      outline:
+      - - {x: -20, y: -20}
+        - {x: 20, y: -20}
+        - {x: 20, y: 18}
+        - {x: 19, y: 20}
+        - {x: -19, y: 20}
+        - {x: -20, y: 17}
+    - name: arrow
       rect:
         serializedVersion: 2
-        x: 217
-        y: 143
+        x: 51
+        y: 133
         width: 40
         height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: tap button
+      outline:
+      - - {x: -14, y: 20}
+        - {x: -20, y: 20}
+        - {x: -20, y: -20}
+        - {x: -13, y: -20}
+        - {x: 13, y: -2}
+        - {x: 13, y: 2}
+        - {x: 10, y: 7}
+    - name: tap button
       rect:
         serializedVersion: 2
-        x: 449
-        y: 294
+        x: 282
+        y: 103
         width: 34
         height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: circle 02
+      outline:
+      - - {x: -13, y: 23}
+        - {x: -17, y: 19}
+        - {x: -17, y: -23}
+        - {x: 17, y: -23}
+        - {x: 17, y: 22}
+        - {x: 16, y: 23}
+    - name: circle 02
       rect:
         serializedVersion: 2
-        x: 258
-        y: 143
+        x: 51
+        y: 174
         width: 39
         height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: gagebox01
+      outline:
+      - - {x: -19.5, y: 19.5}
+        - {x: -19.5, y: -16.5}
+        - {x: -18.5, y: -19.5}
+        - {x: 19.5, y: -19.5}
+        - {x: 19.5, y: 17.5}
+        - {x: 12.5, y: 19.5}
+    - name: gagebox01
       rect:
         serializedVersion: 2
-        x: 769
-        y: 0
+        x: 51
+        y: 359
         width: 53
         height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - serializedVersion: 2
-      name: bg box
+    - name: bg box
       rect:
         serializedVersion: 2
-        x: 298
-        y: 143
+        x: 51
+        y: 311
         width: 38
         height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: Friend box
+      outline:
+      - - {x: -19, y: 19}
+        - {x: -19, y: -15}
+        - {x: -15, y: -19}
+        - {x: 13, y: -19}
+        - {x: 19, y: -14}
+        - {x: 19, y: 19}
+    - name: Friend box
       rect:
         serializedVersion: 2
-        x: 337
-        y: 143
+        x: 282
+        y: 150
         width: 37
         height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: '-'
+      outline:
+      - - {x: -18.5, y: 18.5}
+        - {x: -18.5, y: -15.5}
+        - {x: -15.5, y: -18.5}
+        - {x: 14.5, y: -18.5}
+        - {x: 18.5, y: -15.5}
+        - {x: 18.5, y: 13.5}
+        - {x: 13.5, y: 18.5}
+    - name: '-'
       rect:
         serializedVersion: 2
-        x: 375
-        y: 143
+        x: 282
+        y: 188
         width: 36
         height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: line 02
+      outline:
+      - - {x: -17, y: 17.5}
+        - {x: -18, y: 16.5}
+        - {x: -18, y: -17.5}
+        - {x: 17, y: -17.5}
+        - {x: 18, y: -16.5}
+        - {x: 18, y: 17.5}
+    - name: line 02
       rect:
         serializedVersion: 2
-        x: 823
-        y: 0
+        x: 282
+        y: 277
         width: 125
         height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - serializedVersion: 2
-      name: box01
+    - name: box01
       rect:
         serializedVersion: 2
-        x: 412
-        y: 143
+        x: 282
+        y: 224
         width: 35
         height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: icon 4
+      outline:
+      - - {x: -17.5, y: 17.5}
+        - {x: -17.5, y: -16.5}
+        - {x: -14.5, y: -17.5}
+        - {x: 12.5, y: -17.5}
+        - {x: 17.5, y: -13.5}
+        - {x: 17.5, y: 17.5}
+    - name: icon 4
       rect:
         serializedVersion: 2
-        x: 795
-        y: 72
+        x: 282
+        y: 288
         width: 37
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: ring
+      outline:
+      - - {x: -18.5, y: 16}
+        - {x: -18.5, y: -16}
+        - {x: 17.5, y: -16}
+        - {x: 18.5, y: -15}
+        - {x: 18.5, y: 16}
+    - name: ring
       rect:
         serializedVersion: 2
-        x: 328
-        y: 375
+        x: 493
+        y: 140
         width: 17
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - serializedVersion: 2
-      name: stop
+    - name: stop
       rect:
         serializedVersion: 2
-        x: 833
-        y: 72
+        x: 282
+        y: 321
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: line
+      outline:
+      - - {x: -15, y: 16}
+        - {x: -15, y: -12}
+        - {x: -14, y: -16}
+        - {x: -1, y: -16}
+        - {x: -1, y: 16}
+      - - {x: 1, y: 16}
+        - {x: 1, y: -16}
+        - {x: 13, y: -16}
+        - {x: 15, y: -12}
+        - {x: 15, y: 12}
+        - {x: 13, y: 16}
+    - name: line
       rect:
         serializedVersion: 2
-        x: 823
-        y: 11
+        x: 279
+        y: 494
         width: 127
         height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - serializedVersion: 2
-      name: line03
+    - name: line03
       rect:
         serializedVersion: 2
-        x: 866
-        y: 72
+        x: 51
+        y: 388
         width: 31
         height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - serializedVersion: 2
-      name: popup
+    - name: popup
       rect:
         serializedVersion: 2
-        x: 898
-        y: 72
+        x: 388
+        y: 352
         width: 30
         height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - serializedVersion: 2
-      name: ques_mark
+    - name: radio button
       rect:
         serializedVersion: 2
-        x: 929
-        y: 72
+        x: 51
+        y: 420
         width: 30
         height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - serializedVersion: 2
-      name: name
+    - name: x
       rect:
         serializedVersion: 2
-        x: 960
-        y: 72
+        x: 51
+        y: 451
         width: 30
         height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - serializedVersion: 2
-      name: exc_mark
+    - name: name
       rect:
         serializedVersion: 2
-        x: 991
-        y: 72
+        x: 0
+        y: 133
         width: 30
         height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - serializedVersion: 2
-      name: radio button_ select
+    - name: exc_mark
       rect:
         serializedVersion: 2
-        x: 448
-        y: 143
+        x: 0
+        y: 164
         width: 30
         height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - serializedVersion: 2
-      name: radio button
+    - name: radio button_ select
       rect:
         serializedVersion: 2
-        x: 479
-        y: 143
+        x: 0
+        y: 195
         width: 30
         height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - serializedVersion: 2
-      name: x
+    - name: ques_mark
       rect:
         serializedVersion: 2
-        x: 510
-        y: 143
+        x: 0
+        y: 226
         width: 30
         height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - serializedVersion: 2
-      name: mob_hpbar
+    - name: mob_hpbar
       rect:
         serializedVersion: 2
-        x: 541
-        y: 143
+        x: 365
+        y: 420
         width: 31
         height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - serializedVersion: 2
-      name: line 02
+    - name: line 02
       rect:
         serializedVersion: 2
-        x: 823
-        y: 20
+        x: 0
+        y: 497
         width: 191
         height: 4
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - serializedVersion: 2
-      name: mob_hp
+    - name: mob_hp
       rect:
         serializedVersion: 2
-        x: 573
-        y: 143
+        x: 0
+        y: 257
         width: 28
         height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - serializedVersion: 2
-      name: check
+    - name: check
       rect:
         serializedVersion: 2
-        x: 279
-        y: 250
+        x: 192
+        y: 487
         width: 24
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - serializedVersion: 2
-      name: line 04
+    - name: line 04
       rect:
         serializedVersion: 2
-        x: 621
-        y: 30
+        x: 320
+        y: 288
         width: 87
         height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - serializedVersion: 2
-      name: numberbox_b
+    - name: numberbox_b
       rect:
         serializedVersion: 2
-        x: 602
-        y: 143
+        x: 419
+        y: 352
         width: 20
         height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - serializedVersion: 2
-      name: gagebar_white
+    - name: gagebar_white
       rect:
         serializedVersion: 2
-        x: 304
-        y: 250
+        x: 493
+        y: 0
         width: 16
         height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - serializedVersion: 2
-      name: blue_point
+    - name: blue_point
       rect:
         serializedVersion: 2
-        x: 623
-        y: 143
+        x: 493
+        y: 23
         width: 18
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - serializedVersion: 2
-      name: scroll
+    - name: scroll
       rect:
         serializedVersion: 2
-        x: 621
-        y: 36
+        x: 496
+        y: 42
         width: 15
         height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - serializedVersion: 2
-      name: arrow_d
+    - name: arrow_d
       rect:
         serializedVersion: 2
-        x: 283
-        y: 54
+        x: 496
+        y: 56
         width: 10
         height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - serializedVersion: 2
-      name: dot_7px
+    - name: dot_7px
       rect:
         serializedVersion: 2
-        x: 949
-        y: 0
+        x: 496
+        y: 74
         width: 7
         height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - serializedVersion: 2
-      name: line 03
+    - name: line 03
       rect:
         serializedVersion: 2
-        x: 957
-        y: 0
+        x: 496
+        y: 82
         width: 12
         height: 3
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - serializedVersion: 2
-      name: dot_4px
+    - name: dot_4px
       rect:
         serializedVersion: 2
-        x: 951
-        y: 11
+        x: 507
+        y: 56
         width: 4
         height: 4
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - serializedVersion: 2
-      name: bg dim
+    - name: bg dim
       rect:
         serializedVersion: 2
-        x: 970
-        y: 0
+        x: 507
+        y: 61
         width: 3
         height: 3
       alignment: 0

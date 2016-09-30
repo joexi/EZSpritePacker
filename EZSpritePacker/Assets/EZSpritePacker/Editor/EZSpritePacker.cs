@@ -23,6 +23,9 @@ public class EZSpritePacker : Editor {
 	}
 
 	private static void PackTexture(List <Texture2D> sprites, int width, int height, int padding) {
+		if (width > 2048 || height > 2048) {
+			return;
+		}
 		List <SpriteMetaData> spriteSheets = new List<SpriteMetaData> ();
 		List <Rect> spaces = new List<Rect> ();
 		Dictionary<string, List<Texture2D>> textureCache = new Dictionary<string, List<Texture2D>> ();
@@ -37,26 +40,27 @@ public class EZSpritePacker : Editor {
 
 
 		foreach (Texture2D sp in sprites) {
+			
+//			if (GetRectFromCache(sp, rectCache, ref frame)) {
+//				SpriteMetaData metaData = new SpriteMetaData();
+//				metaData.name = sp.name;
+//				metaData.rect = frame;
+//				metaData.pivot = Vector2.zero;
+//				spriteSheets.Add (metaData);
+//				continue;
+//			}
 			bool deploy = false;
 			Rect frame = default(Rect);
-			if (GetRectFromCache(sp, rectCache, ref frame)) {
-				SpriteMetaData metaData = new SpriteMetaData();
-				metaData.name = sp.name;
-				metaData.rect = frame;
-				metaData.pivot = Vector2.zero;
-				spriteSheets.Add (metaData);
-				continue;
-			}
+			Rect usageRect = default(Rect);
 			for (int i = 0; i < spaces.Count; i++) {
 				Rect space = spaces [i];
 				Vector2 usageSize = new Vector2 (sp.width + padding, sp.height + padding);
-
 				if (space.width >= usageSize.x && space.height >= usageSize.y) {
+					usageRect = new Rect (space.x, space.y, usageSize.x, usageSize.y);
+
 					frame = new Rect (space.x, space.y, sp.width, sp.height);
 					Color[] colors = sp.GetPixels ();
 					resultTexture.SetPixels ((int)frame.x, (int)frame.y, (int)frame.width, (int)frame.height, colors);
-					spaces.RemoveAt (i);
-					spaces.InsertRange (i, SplitSpace (space, usageSize));
 					deploy = true;
 
 					SpriteMetaData metaData = new SpriteMetaData();
@@ -66,10 +70,20 @@ public class EZSpritePacker : Editor {
 					spriteSheets.Add (metaData);
 					break;
 				}
+//				if (i > 10) {
+//					Debug.LogError("stack overflow!!!");
+//					break;
+//				}
 			}
+			if (deploy) {
+				SplitSpaces (spaces, usageRect);
+			}
+
 			if (!deploy) {
-				PackTexture (sprites, width > height ? width : width * 2, width > height ? height * 2 : height, padding);
 				Debug.LogError ("pack failed!" + width + "x" + height);
+				Debug.LogError ("spaces:" + spaces.Count);
+				PackTexture (sprites, width > height ? width : width * 2, width > height ? height * 2 : height, padding);
+
 				return;
 			}
 		}
@@ -128,4 +142,49 @@ public class EZSpritePacker : Editor {
 		}
 		return results;
 	}
+
+	private static void SplitSpaces(List<Rect> spaces, Rect usageRect) {
+//		Debug.Log (spaces.Count);
+		int times = 0;
+		for (int i = 0; i < spaces.Count; i++) {
+			Rect space = spaces [i];
+			times++;
+//			if (times > 10) {
+//				Debug.LogError("stack overflow!!!" + i);
+//				break;
+//			}
+
+			if (space.Overlaps (usageRect)) {
+//				Debug.Log (space + "   " + usageRect);
+				spaces.RemoveAt (i);
+				if (usageRect.x > space.x) {
+					Rect r = new Rect (space.x, space.y, usageRect.x - space.x, space.height);
+//					Debug.Log ("add 1 " + r);
+					if (r.width > 0 && r.height > 0) spaces.Insert (i++, r);
+				}
+
+				if (usageRect.x + usageRect.width < space.x + space.width ) {
+					Rect r = new Rect (usageRect.x + usageRect.width, space.y, space.x + space.width - usageRect.x - usageRect.width, space.height);
+//					Debug.Log ("add 2 " + r);
+					if (r.width > 0 && r.height > 0) spaces.Insert (i++, r);
+				} 
+
+				if (usageRect.y > space.y) {
+					Rect r = new Rect (space.x, space.y, space.width, usageRect.y - space.y);
+//					Debug.Log ("add 3 "  + r);
+					if (r.width > 0 && r.height > 0) spaces.Insert (i++, r);
+				}
+
+				if (usageRect.y + usageRect.height < space.y + space.height) {
+					Rect r = new Rect (space.x, usageRect.y + usageRect.height, space.width, space.y + space.height - usageRect.y - usageRect.height);
+//					Debug.Log ("add 4 "  + r);
+					if (r.width > 0 && r.height > 0) spaces.Insert (i++, r);
+				}
+
+				i--;
+//				Debug.Log ("count:" + spaces.Count + " " +  i);
+			}
+		}
+	}
+
 }
